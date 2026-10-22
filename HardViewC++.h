@@ -1,4 +1,12 @@
 #pragma once
+
+#pragma warning(push)
+#pragma warning(disable : 4244) // unsigned __int64 to DWORD data loss
+#pragma warning(disable : 4200) // zero-sized array in struct/union
+#pragma warning(disable : 4305) // double to float truncation
+#pragma warning(disable : 4005) // Hide macro redefinition warning
+#pragma warning(disable : 4267) // Hide size_t to int conversion warning
+
 #if defined(__linux__)
 // Linux
 
