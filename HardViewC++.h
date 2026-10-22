@@ -45,13 +45,3 @@
 #warning "HardViewC++ is not supported on this platform"
 
 #endif
-
-namespace HardView {
-    
-    inline HardView::HardwareMonitor* hwmon() {
-        static HardView::HardwareMonitor instance;
-        return &instance;
-    }
-
-}
-
